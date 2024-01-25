@@ -1,7 +1,7 @@
 # WebDevSpr.24
 Wed Development Spring 2024
 
-# This is an H1
+<!-- # This is an H1
 Wrokign class notes for Intro to Front End web Development, Spring 2024
 
 ## Ingredients
@@ -10,4 +10,4 @@ Wrokign class notes for Intro to Front End web Development, Spring 2024
 - heres another list item
 
 1. This is an ordered list
-2. This is Step 2
+2. This is Step 2 -->
