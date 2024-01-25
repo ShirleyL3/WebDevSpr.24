@@ -1,8 +1,6 @@
 # Chocoflan Recipe 
 
-![Chocoflan Picture!](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.foodnetwork.com%2Frecipes%2Fmarcela-valladolid%2Fchocoflan-recipe-1949457&psig=AOvVaw1PcejC_6azCmh8QvB5sYOS&ust=1706292368073000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjW8d-Q-YMDFQAAAAAdAAAAABAD )
-
-![Chocoflan Picture!](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.foodnetwork.com%2Frecipes%2Fmarcela-valladolid%2Fchocoflan-recipe-1949457&psig=AOvVaw1PcejC_6azCmh8QvB5sYOS&ust=1706292368073000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNjW8d-Q-YMDFQAAAAAdAAAAABAD )
+![Chocoflan Picture!](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv1-F6JNcQRDp4nwlUVzqk1GEAis8iOdsuzQ&usqp=CAU)
 
 It's been called “The Impossible Chocolate Cake” and “Magic Mexican Chocolate Flan Cake,” but I prefer calling it “Chocoflan!” 
 
