@@ -14,7 +14,7 @@ Chocoflan is a combination of chocolate cake on the bottom with a luscious flan 
 ### Cake Portion:
 - 1 cup sugar
 - 1 egg, room temp
-- 1 3/4 cups all-purpose floru
+- 1 3/4 cups all-purpose flour
 - 3/4 teaspoon baking powder
 - 3/4 teaspoon baking soda
 - 1/3 cup cocoa powder
