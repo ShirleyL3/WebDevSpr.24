@@ -12,7 +12,11 @@
 - can use lipsum as placeholders for dummy words 
 - <em> shows up as italic 
 - <strong> shows up in bold 
-- <hr> horizontal rule
+- <hr > horizontal rule
 - can create a list inside a list by putting an <li> tage within the other <li>
 - <a href> an anchor tag to create a link and putting target =_blank opens the link in a new tag
 - #top to give ID attributes; make with id = blah and refernce it with #top
+
+## Form Elements:
+- 
+
