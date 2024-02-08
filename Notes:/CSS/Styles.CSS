@@ -1,0 +1,31 @@
+html,
+body{
+    margin:0;
+}
+
+div{
+    border: 1px solid red;
+    /* padding is inside the box */
+    padding: 10px;
+}
+
+.abs-no-parent{
+    background-color: purple;
+    position: absolute;
+    top: 20%;
+    right: 100px;
+}
+
+.rel-parent{
+    background-color: aquamarine;
+    width: 50%;
+    /* veiwport heigth is vh */
+    height: 100vh;
+    position: relative;
+}
+
+header{
+    height: 100px;
+    
+}
+

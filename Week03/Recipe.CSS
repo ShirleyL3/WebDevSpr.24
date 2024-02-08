@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+/* font-family: 'Fasthand', cursive; */
+
+html, body{
+    background-color: #F0D8D5;
+    margin:10px;
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif
+}
+
+.Ingredients{
+    background-color: #EFD4DC;
+    padding: 15px;
+    border: 2px solid #EFADDC;
+    box-shadow: 0 0 10px #EF86DC;
+}
+
+.directions, p {
+    font-family: 'Fasthand';
+    background-color: #E3CCF0;
+    padding: 15px;
+    border: 2px solid #E3AFF0;
+    box-shadow: 0 0 10px #CD73D9;
+}
+div{
+    margin-bottom: 20px
+    ;
+}
+
