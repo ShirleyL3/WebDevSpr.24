@@ -1,0 +1,15 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 10px;;
+    font-family: monospace;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}

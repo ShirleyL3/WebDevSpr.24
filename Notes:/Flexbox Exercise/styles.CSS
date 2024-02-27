@@ -1,0 +1,170 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: monospace;
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+/* Flexbox Simple rows and columns */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* NEED THIS in order for things to stack whenn screen is too small */
+    flex-wrap: wrap;
+    border: 1px solid purple;
+    background-color: rgba(255,0,255,0.3);
+    min-height: 400px;
+}
+
+.items{
+    border: 1px solid cornflowerblue;
+    background-color: rgba(0,0,255,0.3);
+    width: 23%;
+    height: 300px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-even{
+    justify-content: space-evenly;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+
+}
+.align-center{
+    align-items: center;
+}
+
+.self-start{
+    align-self: flex-start;
+}
+.self-end{
+    align-self: flex-end;
+}
+.self-center{
+    align-self: center;
+}
+.self-stretch{
+    align-self: stretch;
+    /* overide needed to wipe out fixed 300px height */
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .items{
+        width:90%;
+    }
+    .self-stretch{
+        width: auto;
+    }
+}
+
+/* standard layout example */
+header{
+    display: flex;
+    min-height: 100px;
+    background-color: aquamarine;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: lavender;
+}
+
+.grid-item{
+    width:23%;
+    margin: 1%;
+
+}
+.secondary-nav{
+    min-width: 25%;
+    background-color: royalblue;
+}
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    border-bottom: 1px solid gray;
+}
+.menu span{
+    font-size: 2 rem;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.menu a:hover{
+    background-color: rgba(0,0,255,1) ;
+}
+
+footer{
+    background-color: coral;
+    min-height: 100px;
+    display: flex;
+}
+@media screen and (max-width:1024px){
+    .grid-item{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .wrapper{
+        /* only works when we are swithcing postion of 2 items where the thing at bottom is reversed to top */
+        flex-direction: column-reverse;
+    }
+    .secondary-nav{
+        order: 1;
+    }
+    .grid-container{
+        flex-direction: column;
+        order: 2;
+    }
+    .grid-item{
+        width: 95%;
+
+    }
+}
