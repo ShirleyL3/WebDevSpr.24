@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+   <head> 
+     <!-- Boilerplate -->
+      <meta charset="utf-8"/>
+      <meta name = "viewport" content= "width=device-width, initial-scale=1"/>
+      <title>HTML Elements 101</title>
+      <style type="text/css">
+         .button{
+            text-decoration: none;
+            color: white;
+            background-color: plum;
+            padding: 1 rem 2 rem;
+            border-radius: 0.25 rem;
+         }
+
+         .info_model{
+            /* can use position fixed for nav bar */
+            /* Streatched to cover the entire browser window */
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            /* transparent gray background */
+            background-color: rgba(0,0,0,0.3);
+            /* make sure the models pop up in front of anything else */
+            z-index: 9999;
+            /* start state of 0& opacity so we can animate it */
+            opacity: 0;
+            /* always define transitions at starting state */
+            transition: opacity 400ms ease-in;
+            /* disable all mouse events */
+            pointer-events: none;
+         }
+
+         .info_model:target{
+            opacity: 1;
+            pointer-events: auto;
+         }
+         /* Look for soemthign with a class of info_model and 
+         find the div that is a direct descendent and only style that */
+         .info_model>div{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 10% auto;
+            padding: 2 rem;
+            background-color: white;
+            border-radius: 10px;
+         }
+         .close{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            color: blueviolet;
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 0 10px 0 0;
+
+         }
+         .close:hover{
+            background-color: black;
+            color: white;
+
+
+         }
+      </style>
+
+
+   </head>
+   <body>
+      <a href="#info" class="button"> Link to model 1</a>
+      <a href="#info2" class="button"> Link to model 2</a>
+
+      <!-- Main parent Div and acts as the transparent background color -->
+      <div id="info" class="info_model">
+         <!-- model content -->
+         <div>
+            <!-- Absolutely positioned closed button -->
+            <a href="close" class="close">X</a>
+            <!-- whatever HTML -->
+            <h2> Title of model one</h2>
+            <p> Hey Hey Hey Hey Hey Hey Hey Hey Hey</p>
+         </div>
+      </div>
+
+      <div id="info2" class="info_model">
+         <!-- model content -->
+         <div>
+            <!-- Absolutely positioned closed button -->
+            <a href="close" class="close">X</a>
+            <!-- whatever HTML -->
+            <h2> Title of model two</h2>
+            <p> Hey Hey Hey Hey Hey Hey Hey Hey Hey</p>
+         </div>
+      </div>
+      
+
+   </body>
+</html>

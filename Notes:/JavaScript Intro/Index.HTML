@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+   <head> 
+     <!-- Boilerplate -->
+      <meta charset="utf-8"/>
+      <meta name = "viewport" content= "width=device-width, initial-scale=1"/>
+      <title>Javascript Intro</title>
+      <style type="text/css">
+        /*  */
+        .active{
+            background-color: purple;
+            color: white;
+            font-size: 60px;
+        }
+      </style>
+
+      <script type="text/Javascript">
+        // decalre a varibale
+        var myvar; 
+        // assigning a value to a variable
+        myVar='number'
+        // declare and assign a value in one line
+        var otherVar= 24
+        //reassign values at any time, and NEW type of value
+        otherVar= 'twenty four'
+
+        console.log(var)
+        console.log(typeof myVar)
+
+        var x = 15
+        var y = '3'
+        var z = 'three'
+        console.log(x+y)
+        console.log(x*y)
+        console.log(x*z)
+
+        // variables and strings mixed
+        var temp=72
+        var message= "today's tmeperatue is" + temp + "degrees F"
+        console.log(message)
+
+        //function paramenters and the inclick attribute
+        function sumValues(a,b){
+            // variables declared inside and{} live and die inside
+            var sum = a + b
+            sum = 10 +20
+            alert(sum)
+        }
+        sumValues(123,456)
+        //error thrown bc var sum is scoped within sumValues
+        //console.log(sum)
+
+        //boolenas and conditionals
+        var isOn =true
+
+        //toggle between on and off
+        function switchOnOff(){
+            if(isON=='true'){
+                alert('isOn is currenlty TRUE, switching to FALSE')
+                isOn=false
+            }else{
+                alert('isOn is currenlty False, switching to On')
+                isON= true
+            }
+        }
+        function toggleactive(){
+            //grab an element to change
+            var element = document.getElementById('changeme')
+            //check and see if the emelent has teh class active, if so remove it
+            if (element.classList.contains('active')){
+                element.classList.remove('active')
+                element.innerHTML = 'I am not active anymore!'
+            }else{
+                element.classList.add('active')
+                element.innerHTML = "I am active!"
+            }
+        }
+
+      </script>
+   </head>
+   <body>
+    <!-- <button onclick="switchOnOff()"> Toggle On/Off</button> -->
+    <h1 id="changeme" onclick="toggleactive()">This is the heading, click me to change my CSS and HTML </h1>
+   </body>
+</html>

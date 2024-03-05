@@ -1,0 +1,23 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0%;;
+    font-family: monospace;
+    background: rgb(143,192,241);
+    background: linear-gradient(
+        90deg, rgba(143,192,241,1) 0%,
+        rgba(229,212,238,0.9878545168067226) 50%,
+        rgba(148,172,233,1) 100%);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop First Styling */
+
