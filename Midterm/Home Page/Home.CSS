@@ -12,6 +12,8 @@ html, body{
         90deg, rgba(143,192,241,1) 0%,
         rgba(229,212,238,0.9878545168067226) 50%,
         rgba(148,172,233,1) 100%);
+    /* background-color: linear-gradient(180deg,rgba(229,212,238,0.8393951330532212) 50%, rgba(152,168,236,1) 100%); */
+    
 }
 
 img{
@@ -20,4 +22,27 @@ img{
 }
 
 /* Desktop First Styling */
+.homeContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
 
+.home-item{
+    width:40%;
+    text-align: center;
+}
+.side-nav{
+    min-width: 40%;
+    font-size: 45px;
+}
+.side-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600px;
+    display: flex;
+}
