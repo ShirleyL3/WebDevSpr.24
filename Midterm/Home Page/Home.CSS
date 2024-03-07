@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, body, header{
     margin: 0%;;
     font-family: monospace;
     background: rgb(143,192,241);
@@ -22,6 +22,31 @@ img{
 }
 
 /* Desktop First Styling */
+
+header{
+    position: fixed;
+    top: 6px;
+    left: 0;
+    right: 0;
+}
+.header-content{
+    padding: 0 43px 0 43px;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-content li, .header-content a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+
 .homeContainer{
     display: flex;
     flex-direction: row;
@@ -37,12 +62,34 @@ img{
     text-align: center;
 }
 .side-nav{
-    min-width: 40%;
-    font-size: 45px;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 40%;
 }
-.side-nav a{
+
+.side-nav button{
+    width:160px;
+    height:60px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 15px;
+    background-color: white;
+}
+
+.side-nav li{
+    padding: 18px;
+    text-align: center;
+    list-style-type: none;
+    min-height: 5rem;
+}
+
+.side-nav li a{
+    display: block;
     text-decoration: none;
     color: black;
-    font-weight: 600px;
-    display: flex;
+    font-size: medium;
+    font-weight: 500;
 }
+
