@@ -5,7 +5,7 @@
 }
 
 html, body, header{
-    margin: 0%;;
+    margin: 0%;
     font-family: monospace;
     background: rgb(143,192,241);
     background: linear-gradient(
@@ -23,29 +23,43 @@ img{
 
 /* Desktop First Styling */
 
-header{
+/* Header CSS */
+.top-nav {
+    overflow: hidden;
     position: fixed;
-    top: 6px;
-    left: 0;
-    right: 0;
-}
-.header-content{
-    padding: 0 43px 0 43px;
-    height: inherit;
+    top: 20px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0rem 4rem;
 }
-
-header .header-content li, .header-content a{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
+.top-nav img{
+    width: 10%;
+}
+header a,h1{
+    color: white;
+    text-decoration:none;
+}
+.header-side{
+    padding: 0;
+    margin: 0;
     display: flex;
+    flex-direction: row;
+}
+.header-side li{
+    list-style: none;
     align-items: center;
+    font-size: 1.5rem;
+    min-width: 5rem;
+}
+.header-side li a{
+    display:block;
+    padding: 1rem;
 }
 
+/* Body CSS */
 
 .homeContainer{
     display: flex;
@@ -54,9 +68,12 @@ header .header-content li, .header-content a{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 2.5rem;
 }
-
+.home-item img{
+    height: auto;
+    width: 150%;
+}
 .home-item{
     width:40%;
     text-align: center;
@@ -69,22 +86,19 @@ header .header-content li, .header-content a{
     flex-wrap: wrap;
     min-height: 40%;
 }
-
 .side-nav button{
     width:160px;
     height:60px;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 15px;
-    background-color: white;
+    background-color: rgba(255,255,255,0.8001794467787114);
 }
-
 .side-nav li{
     padding: 18px;
     text-align: center;
     list-style-type: none;
     min-height: 5rem;
 }
-
 .side-nav li a{
     display: block;
     text-decoration: none;
@@ -93,3 +107,8 @@ header .header-content li, .header-content a{
     font-weight: 500;
 }
 
+/* Phone Media Quierie */
+
+@media screen and (max-width:768px){
+
+}
