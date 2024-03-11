@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-html, body, header{
-    margin: 0%;
+html, body{
     font-family: monospace;
     background: rgb(143,192,241);
     background: linear-gradient(
@@ -18,12 +17,12 @@ html, body, header{
 
 img{
     width: 100%;
-    height: auto;
 }
 
 /* Desktop First Styling */
 
 /* Header CSS */
+
 .top-nav {
     overflow: hidden;
     position: fixed;
@@ -59,56 +58,37 @@ header a,h1{
     padding: 1rem;
 }
 
-/* Body CSS */
+/* Personal Profile section */
 
-.homeContainer{
+.about-me {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 2.5rem;
-}
-.home-item img{
-    height: auto;
-    width: 150%;
-}
-.home-item{
-    width:40%;
     text-align: center;
+    min-height: 100vh;
 }
-.side-nav{
-    list-style-type: none;
-    align-items: center;
+
+.about-row{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 40%;
-}
-.side-nav button{
-    width:160px;
-    height:60px;
-    border: 2px solid rgba(255,255,255,0.5);
+    flex-direction: row;
+    padding: 30px 200px 30px;
     border-radius: 15px;
-    background-color: rgba(255,255,255,0.8001794467787114);
-}
-.side-nav li{
-    padding: 18px;
-    text-align: center;
-    list-style-type: none;
-    min-height: 5rem;
-}
-.side-nav li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-    font-weight: 500;
+    align-items: center;
 }
 
-/* Phone Media Quierie */
+.about-column{    
+    flex: 50%;
+    padding: 20px;
+    margin: 50px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s; 
+}
 
-@media screen and (max-width:768px){
+.about-column img{
+    width: 100%;
+}
 
+.about-column i{
+    font-size: 36px;;
 }
