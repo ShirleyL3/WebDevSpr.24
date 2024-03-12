@@ -31,7 +31,6 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 0rem 4rem;
 }
 .top-nav img{
@@ -57,13 +56,53 @@ header a,h1{
     display:block;
     padding: 1rem;
 }
+
+.dropdown{
+    overflow: hidden;
+}
+
+.dropdown .menu{
+    font-size: 16px;  
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
+}
+
+.top-nav a:hover, .dropdown:hover .menu {
+    color: black;
+  }
+
+  .menu-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .menu-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .menu-content {
+    display: block;
+  }
 /* Project Cards */
 
 body h1{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 0;
 }
+
 
 .project-column{
     width: 50%;
@@ -78,7 +117,7 @@ body h1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 200px 30px;
+    padding: 5%;
     border-radius: 15px;
 }
 
