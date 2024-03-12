@@ -11,7 +11,6 @@ html, body{
         90deg, rgba(143,192,241,1) 0%,
         rgba(229,212,238,0.9878545168067226) 50%,
         rgba(148,172,233,1) 100%);
-    /* background-color: linear-gradient(180deg,rgba(229,212,238,0.8393951330532212) 50%, rgba(152,168,236,1) 100%); */ 
 }
 
 img{
@@ -30,11 +29,11 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 0rem 4rem;
 }
 .top-nav img{
     width: 40%;
+    height:auto;
 }
 header a,h1{
     color: white;
@@ -57,13 +56,14 @@ header a,h1{
     padding: 1rem;
 }
 
+/* Nav Dropdown Section */
 .dropdown{
     overflow: hidden;
+    width: 120px;
 }
 
 .dropdown .menu{
     font-size: 16px;  
-    padding: 14px 16px;
     font-family: inherit;
     margin: 0;
 }
@@ -133,11 +133,12 @@ header a,h1{
 
 /* Phone Media Quierie */
 @media screen and (max-width:768px){
-    .top-nav img{
-        margin: 10%;
-    }
     .about-row{
         flex-direction: column;
+    }
+    .top-nav img{
+        width: 60%;
+        height: auto;
     }
 
 }

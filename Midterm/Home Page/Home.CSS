@@ -30,7 +30,6 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     padding: 0rem 4rem;
 }
 .top-nav img{
@@ -114,16 +113,13 @@ header a,h1{
 /* Phone Media Quierie */
 
 @media screen and (max-width:768px){
+    /* Remove side nav bar to add Hamburger */
     .menu{
         display: none;
-    }
-    .top-nav img{
-        margin: 10%;
     }
     .homeContainer{
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         margin-top: 20%;
     }
@@ -134,16 +130,15 @@ header a,h1{
         width: 120%;
     }
     /* Dropdown Hamburger Added */
-    .top-nav{
-        align-items: center;
-    }
+
     .dropdown{
-        display: block;
         overflow: hidden;
+        display: block;
+        width: 120px;    
     }
+    
     .dropdown .mobile-menu{
         font-size: 16px;
-        padding: 14px, 16px;
         margin: 0;
     }
     .menu-content{

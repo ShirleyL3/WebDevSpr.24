@@ -11,8 +11,6 @@ html, body{
         90deg, rgba(143,192,241,1) 0%,
         rgba(229,212,238,0.9878545168067226) 50%,
         rgba(148,172,233,1) 100%);
-    /* background-color: linear-gradient(180deg,rgba(229,212,238,0.8393951330532212) 50%, rgba(152,168,236,1) 100%); */
-    
 }
 
 img{
@@ -57,13 +55,14 @@ header a,h1{
     padding: 1rem;
 }
 
+/* Nav Dropdown Section */
 .dropdown{
     overflow: hidden;
+    width: 120px;
 }
 
 .dropdown .menu{
     font-size: 16px;  
-    padding: 14px 16px;
     font-family: inherit;
     margin: 0;
 }
@@ -96,4 +95,7 @@ header a,h1{
     display: block;
 }
 
-
+/* Experience Page */
+body h1{
+    text-align: center;
+}
