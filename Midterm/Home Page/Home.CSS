@@ -57,8 +57,14 @@ header a,h1{
     padding: 1rem;
 }
 
-/* Body CSS */
+.top-nav a:hover, .dropdown:hover .menu {
+    color: black;
+}
 
+/* Body CSS */
+.dropdown{
+    display: none;
+}
 .homeContainer{
     display: flex;
     flex-direction: row;
@@ -108,5 +114,53 @@ header a,h1{
 /* Phone Media Quierie */
 
 @media screen and (max-width:768px){
-
+    .menu{
+        display: none;
+    }
+    .top-nav img{
+        margin: 10%;
+    }
+    .homeContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20%;
+    }
+    .home-item{
+        width: 70%;
+    }
+    .home-item img{
+        width: 120%;
+    }
+    /* Dropdown Hamburger Added */
+    .top-nav{
+        align-items: center;
+    }
+    .dropdown{
+        display: block;
+        overflow: hidden;
+    }
+    .dropdown .mobile-menu{
+        font-size: 16px;
+        padding: 14px, 16px;
+        margin: 0;
+    }
+    .menu-content{
+        display: none;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .menu-content a{
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown .menu-content{
+        display: block
+    }
 }

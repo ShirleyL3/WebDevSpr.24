@@ -138,3 +138,21 @@ input[type=submit]:hover {
     background-color: #dfe4f2;
     padding: 20px;
 }
+
+/* Media Queries */
+
+/* Phone Size */
+@media screen and (max-width:768px){
+    .top-nav img{
+        margin: 10%;
+    }
+    .container{
+        margin-top: 20%;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+
+
+
+}

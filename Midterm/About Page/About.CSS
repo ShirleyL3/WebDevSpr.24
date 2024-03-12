@@ -30,6 +30,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 0rem 4rem;
 }
 .top-nav img{
@@ -94,8 +95,8 @@ header a,h1{
 .dropdown:hover .menu-content {
     display: block;
 }
-/* Personal Profile section */
 
+/* Personal Profile section */
 .about-me {
     display: flex;
     justify-content: center;
@@ -127,5 +128,16 @@ header a,h1{
 }
 
 .about-column i{
-    font-size: 36px;;
+    font-size: 36px;
+}
+
+/* Phone Media Quierie */
+@media screen and (max-width:768px){
+    .top-nav img{
+        margin: 10%;
+    }
+    .about-row{
+        flex-direction: column;
+    }
+
 }
