@@ -5,9 +5,9 @@
      <!-- Boilerplate -->
       <meta charset="utf-8"/>
       <meta name = "viewport" content= "width=device-width, initial-scale=1"/>
-      <title>Shirley's Experience </title>
+      <title>Contact Shirley </title>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-      <link rel="stylesheet" href="./Exp.CSS">
+      <link rel="stylesheet" href="./Contact.CSS">
    </head>
    <body>
       <!-- Header Content -->
@@ -24,13 +24,35 @@
                         <a href="../About Page/About.HTML">About</a>
                         <a href="../Projects Page/Projects.HTML">Projects</a>
                         <a href="../Experience Page/Exp.HTML">Experiences</a>
-                        <a href="../Contacts Page/Contact.HTML">Contact</a>
+                        <a href="../Contacts Page/Contact.CSS">Contact</a>
                      </div>
                   </div>
                </ul>
             </div>
          </div>
      </header>
+
+     <div class="container">
+        <div class="title">
+            <h1> Send Me a Message! </h1>
+            <p> Looking forward to connecting with you! </p>
+        </div>
+        <form action="contactme.php" method="POST" name="contactmeForm">
+            <div class="form-row">
+                <label for="Name">Name: </label>
+                <input name="FirstName" type="text" placeholder="Enter Your Name">
+
+                <label for="Email">Email Address: </label>
+                <input name="LastName" type="text" placeholder="Enter Your Email Address">
+            </div>
+            
+            <label for="Message"> Message: </label>
+            <textarea name="whyIDM" cols="50" rows="10" placeholder="Let's Discuss a new Project"></textarea>
+
+            <input name="Submit" type="submit" value="submit"/>
+        </form>
+
+     </div>
 
    </body>
 </html>

@@ -1,0 +1,144 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: monospace;
+    background: rgb(143,192,241);
+    background: linear-gradient(
+        90deg, rgba(143,192,241,1) 0%,
+        rgba(229,212,238,0.9878545168067226) 50%,
+        rgba(148,172,233,1) 100%);
+    /* background-color: linear-gradient(180deg,rgba(229,212,238,0.8393951330532212) 50%, rgba(152,168,236,1) 100%); */
+    
+}
+
+img{
+    width: 100%;
+}
+
+/* Desktop First Styling */
+
+/* Header CSS */
+
+.top-nav {
+    overflow: hidden;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+}
+.top-nav img{
+    width: 40%;
+}
+header a,h1{
+    color: white;
+    text-decoration:none;
+}
+.header-side{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.header-side li{
+    list-style: none;
+    align-items: center;
+    font-size: 1.5rem;
+    min-width: 5rem;
+}
+.header-side li a{
+    display:block;
+    padding: 1rem;
+}
+
+.dropdown{
+    overflow: hidden;
+}
+
+.dropdown .menu{
+    font-size: 16px;  
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
+}
+
+.top-nav a:hover, .dropdown:hover .menu {
+    color: black;
+}
+
+.menu-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.menu-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.menu-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .menu-content {
+    display: block;
+}
+
+/* Contact Form */
+
+.container{
+    margin: 10%;
+}
+.container .title h1, p{
+    text-align: center;
+    color: black;
+}
+.form-row{
+    display: flex;
+    flex-direction: row;
+}
+.form-row label{
+    margin: 2%;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] { 
+    background-color: #dfbbf1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:white;
+    color: black;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
