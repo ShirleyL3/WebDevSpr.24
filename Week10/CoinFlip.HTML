@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en"></html>
+   <head> 
+      <meta charset="utf-8"/>
+      <meta name = "viewport" content= "width=device-width, initial-scale=1"/>
+      <title> Coin Flip </title>
+      <style type="text/CSS">
+        /* CSS CODE */
+        *, body{
+            background-color: #ACE0EB;
+        }
+        h1{
+            text-align: center;
+            color: #42565A;
+            font-size: 100px;
+        }
+
+        img{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-right: auto;
+            margin-left: auto;
+            width: 20%;
+        }
+        /* img.tails{
+            display: none;
+        } */
+        .hide {
+            display: none;
+        }
+        .display{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            width: 20%;
+        }
+        
+
+        button{
+            width: 200px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5%;
+            font-size: 30px;
+            padding: 10px;
+            background-color: #73979E;
+            color: whitesmoke;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 6px whitesmoke;
+        }
+        button:hover{
+            background-color: #42565A;
+        }
+        button:active{
+            background-color: #42565A;
+            box-shadow: 0 3px #999;
+            transform: translateY(3px);
+        }
+        .outcome{
+            text-align: center;
+            margin-top: 5%;
+            font-size: 30px;
+        }
+      </style>
+      <script type="text/javascript">
+        // JAVASCRIPT CODE
+        document.addEventListener('DOMContentLoaded', function(){
+            let outcomeDiv = document.getElementById('outcome')
+            let flipbutton = document.getElementById('flip')
+            let coinheads = document.getElementById('heads')
+            let cointails = document.getElementById('tails')
+
+            flipbutton.addEventListener('click', function(){
+                let x = Math.round(Math.random())
+                let result
+                let headscount
+                let tailscount
+
+                if (x==0){
+                    // will return heads
+                    result = 'Heads'
+                    headscount +=1
+
+                }else{
+                    //will return Tails
+                    result = 'Tails'
+                    tailscount +=1
+                } 
+                displayResult(result)
+                displayCoin(result, headscount, tailscount)
+                // 
+                let p1 = document.createElement('P')
+                // let p2 = document.createElement('P')
+                // let p3 = document.createElement('p')
+
+                var t1 = document.createTextNode('The Coin Flipped:'+ result)
+                // var t2 = document.createTextNode('Flipped Heads: '+ headscount+ ' times')
+                // var t3 = document.createTextNode('Flipped Tails: '+ tailscount+ ' times')
+
+                p1.appendChild(t1)
+                // p2.appendChild(t2)
+                // p3.appendChild(t3)
+
+                outcomeDiv.appendChild(p1)
+                // outcomeDiv.appendChild(p2)
+                // outcomeDiv.appendChild(p3)
+
+            })
+
+            function displayCoin(result){
+                if (result == 'Heads') {
+                    //will hide the tails img
+                    coinheads.className = 'display'
+                    cointails.className = 'hide'
+
+                } else {
+                    //will display the heads img
+                    coinheads.className = 'hide'
+                    cointails.className = 'display'
+                }
+            }
+            function displayResult(result, headscount, tailscount){
+                var t1 = document.createTextNode('The Coin Flipped:'+ result)
+                var t2 = document.createTextNode('Flipped Heads: '+ headscount+ ' times')
+                var t3 = document.createTextNode('Flipped Tails: '+ tailscount+ ' times')
+            }
+    
+        })
+      </script>
+    <!-- HTML CODE Begins -->
+   </head>
+   <body>
+    <h1> COIN FlIP</h1>
+    <img class="heads" id="heads" src="Heads.png" alt="heads"/>
+    <img class="tails" id="tails" src="Tails.png" alt="tails"/>
+    <button type="button" id="flip"> FLIP </button>
+
+    <div class="outcome" id="outcome"></div>
+   </body>
+</html>
