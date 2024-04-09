@@ -9,13 +9,17 @@
         /* CSS CODE */
         *, body{
             background-color: #ACE0EB;
+            box-sizing: border-box;
         }
         h1{
             text-align: center;
             color: #42565A;
             font-size: 100px;
         }
-
+        .coins{
+            display: flex;
+            flex-direction: row;
+        }
         img{
             display: flex;
             flex-direction: row;
@@ -24,9 +28,7 @@
             margin-left: auto;
             width: 20%;
         }
-        /* img.tails{
-            display: none;
-        } */
+
         .hide {
             display: none;
         }
@@ -37,7 +39,6 @@
             width: 20%;
         }
         
-
         button{
             width: 200px;
             display: block;
@@ -136,8 +137,11 @@
    </head>
    <body>
     <h1> COIN FlIP</h1>
-    <img class="heads" id="heads" src="Heads.png" alt="heads"/>
-    <img class="tails" id="tails" src="Tails.png" alt="tails"/>
+    <div class="coins">
+        <img class="heads" id="heads" src="Heads.png" alt="heads"/>
+        <img class="tails" id="tails" src="Tails.png" alt="tails"/>
+    </div>
+    
     <button type="button" id="flip"> FLIP </button>
 
     <div class="outcome" id="outcome"></div>
