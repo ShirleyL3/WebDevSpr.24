@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head> 
+     <!-- Boilerplate -->
+      <meta charset="utf-8"/>
+      <meta name = "viewport" content= "width=device-width, initial-scale=1"/>
+      <title>Shirley's Portfolio</title>
+
+      <!-- BootStrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+       
+      <!-- Font Import -->
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&display=swap');
+      </style>
+
+      <!-- Icon StylesSheet -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+      <!-- CSS Stylesheet -->
+      <link rel="stylesheet" href="About.CSS">
+   </head>
+
+   <body>
+
+    <!-- NavBar Hamburger -->
+    <nav class="navbar bg-body-tertiary fixed-top myNav">
+      <div class="container-fluid myNav">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span class="material-symbols-outlined hamicon"> menu </span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="../Home Page/Home.HTML">SHIRLEY LANDEROS </a></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../About Page/About.HTML">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROJECTS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../UXUI Page/UXUI.HTML">UX/UI</a></li>
+                  <li><a class="dropdown-item" href="../WebDev Page/WebDev.HTML">WEB DEV</a></li>
+                  <li><a class="dropdown-item" href="../CS Page/Prog.HTML">PROGRAMMING</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../Contact Page/Contact.HTML">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start of About Page  -->
+    <h1 class="AboutTitle"> MY STORY</h1>
+    <div class="AboutContainer">
+      <div class="about-item">
+        <img class="about-img" src="./AboutImgs/ProfilePic.jpg" alt="Picture of Shirley Landeros"/>
+      </div>
+      <div class="aboutIntro">
+        <h3>UX/UI Designer and Web Developer</h2>
+        <h4> Hello, my name is <span>Shirley</span>! I'm based in New York City, 
+          currently in my third year at New York University. My passion lies in 
+          crafting captivating digital experiences, from designing intuitive interfaces to 
+          prototyping websites and apps and diving into front-end development. I'm 
+          driven by a growing interest in creating unique user experiences, constantly 
+          seeking to push boundaries and captivate audiences with innovative design solutions. 
+          Looking forward to redefining the digital landscape, one pixel at a time! </h4>
+      </div>
+    </div>
+
+    <!-- Education Area -->
+    <h2 class="AboutTitle2">Education</h2>
+    <div class="EduSection">
+        <div> 
+            <img class="edulogo" src="./AboutImgs/NYULogo.png" alt="NYU Logo">
+        </div>
+        <div class="EduInfo">
+            <h4>NEW YORK UNIVERSITY</h4>
+            <h5> Bachelors of Science in</h5>
+            <h5> Integreated Design Media</h5>
+            <h5> & Computer Science</h5>
+            <h4> Expected Graduation: Spring 2025</h4>
+        </div>
+    </div>
+
+
+    <!-- Experience Area -->
+    
+    <h2 class="AboutTitle2">Professional Experience</h2>
+      <div class="ExpSection">
+        <!-- Exp 1 -->
+        <div class="Exp">
+          <div class="logo">
+            <img src="./AboutImgs/NYULogo.png" alt="New York University Logo">
+          </div>
+          <div class="ExpLeft">
+            <div>
+              <h5> Vertical Integrated Program Developer, New York University </h5>
+              <ul>
+                <li>Designing for creative physical computing, working and managing product team of 6 to create a physical and digital product that integrates computing into artistic practices</li>
+                <li>Coordinated product decisions and strategy to create designs and innovative product features</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ExpRight">
+            <h5> Present </h5>
+          </div>
+        </div>
+        <!-- Exp 2 -->
+        <div class="Exp">
+          <div class="logo">
+            <img src="./AboutImgs/AOT.jpeg" alt="America On Tech Logo">
+          </div>
+          <div class="ExpLeft">
+            <div>
+              <h5>Advanced Web Developer Teaching Assistant, America on Tech</h5>
+              <ul>
+                <li>Instructed and mentored a cohort of 20+ high school students in web development, imparting knowledge in
+                  HTML, CSS, and JavaScript to facilitate their entry into the tech industry, while providing ongoing guidance and
+                  support for their career development and web development skills
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ExpRight">
+            <h5> Fall, 2024 - Present </h5>
+          </div>
+        </div>
+      
+        <!-- Exp 3 -->
+        <div class="Exp">
+          <div class="logo">
+            <img src="./AboutImgs/EWH.png" alt="Engineering World Health Logo">
+          </div>
+          <div class="ExpLeft">
+            <div>
+              <h5>Engineering World Health, EWH, Guatemala</h5>
+              <ul>
+                <li>Contribute to international healthcare in Guatemala by repairing vital hospital equipment and improving patient
+                  health while gaining new perspectives on engineering needs and design in low-resource settings
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ExpRight">
+            <h5> Summer 2023 </h5>
+          </div>
+        </div>
+
+        <!-- Exp 4 -->
+        <div class="Exp">
+          <div class="logo">
+            <img src="./AboutImgs/NBCU.jpeg" alt="NBCU Logo">
+          </div>
+          <div class="ExpLeft">
+            <div>
+              <h5>Cybersecurity Fellowship, NBCU & America On Tech, Inc, New York</h5>
+              <ul>
+                <li>Acquired understanding in Cybersecurity using Linux, Virtual Machines, and VMware Fusion</li>
+                <li>Professional development with NBCU through weekly workshops with Cybersecurity professionals</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ExpRight">
+            <h5> Spring 2023 </h5>
+          </div>
+        </div>
+
+        <!-- Exp 5 -->
+        <div class="Exp">
+          <div class="logo">
+            <img src="./AboutImgs/Mobalytics.png" alt="Mobalytics Logo">
+          </div>
+          <div class="ExpLeft">
+            <div>
+              <h5>Mobalytics Data Analytics Extern, Paragon One, New York</h5>
+              <ul>
+                <li>Researched macro trends, industry drivers, and most relevant publishers in crypto gaming</li>
+                <li>Pitched monetization and partnership opportunities to Mobalytics through a detailed presentation</li>
+                <li>Analyzed successful play-to-earn Crypto games and their publishers to understand Web/Blockchain gaming</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ExpRight">
+            <h5> Spring 2023 </h5>
+          </div>
+        </div>
+
+        <!-- Exp 6 -->
+        <div class="Exp">
+          <div class="logo">
+            <img src="./AboutImgs/BlackStone.jpeg" alt="BlackStone Logo">
+          </div>
+          <div class="ExpLeft">
+            <div>
+              <h5>UX Design Fellowship, Blackstone & America On Tech, New York</h5>
+              <ul>
+                <li>Designed a tech portfolio while mastering Figma</li>
+                <li>Attended professional development training sessions and career days with professionals from Blackstone</li>
+                <li>Paired with technology mentors and professionals that focused on college and career readiness skills</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ExpRight">
+            <h5> Fall 2022 </h5>
+          </div>
+        </div>
+
+        <div class="Exp">
+          <div class="logo">
+            <img src="./AboutImgs/AOT.jpeg" alt="America On Tech Logo">
+          </div>
+          <div class="ExpLeft">
+            <div>
+              <h5>Tech Flex Leader, America On Tech, Inc</h5>
+              <ul>
+                <li>Received 160 hours of coding HTML, CSS, JavaScript, Repl.it, and Bootstrap</li>
+                <li>Participated in weekly technology classes taught by software engineers at leading technology companies</li>
+                <li>Developed technology project portfolio illustrating web development understanding gained in year-long fellowship</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ExpRight">
+            <h5> 2020 - 2021 </h5>
+          </div>
+        </div>
+
+        
+
+
+
+      </div>
+    
+    
+
+
+    <div class="stickySide">
+
+    </div>
+    
+
+   </body>
+</html>

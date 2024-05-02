@@ -1,0 +1,78 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+.mr-dafoe-regular {
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+.montserrat-Mont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style:normal;
+}
+  
+html, header{
+    margin: 0%;
+    font-family: Mr Dafoe;
+    background: black
+}
+html, body, nav{
+    margin: 0%;
+    font-family: Montserrat;
+    background: black
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop First Styling */
+
+/* Header CSS */
+
+/* .myNav{
+    background-color: black;
+} */
+
+.bg-body-tertiary {
+    /* Changed the o[acity to zero to make the navbar black */
+    --bs-bg-opacity: 0;
+}
+.hamicon{
+    color: white;
+    font-size: larger;
+}
+.container-fluid{
+    --bs-gutter-x: 20%;
+}
+.fixed-top{
+    top: 3%;
+}
+.offcanvas-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.hero-sec h1{
+    font-size: 76px;
+    text-transform: uppercase;
+    color: white;
+}
+.hero-sec h1 span{
+    display: inline-block;
+}

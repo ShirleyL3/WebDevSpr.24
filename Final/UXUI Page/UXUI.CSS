@@ -1,0 +1,96 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+.mr-dafoe-regular {
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+.montserrat-Mont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style:normal;
+}
+  
+html, header{
+    margin: 0%;
+    font-family: Mr Dafoe;
+    background: black
+}
+html, body, nav{
+    margin: 0%;
+    font-family: Montserrat;
+    background: black
+}
+
+/* img{
+    width: 100%;
+    height: auto;
+} */
+
+/* Desktop First Styling */
+
+/* Header CSS */
+
+.bg-body-tertiary {
+    /* Changed the opacity to zero to make the navbar black */
+    --bs-bg-opacity: 0;
+}
+.hamicon{
+    color: white;
+    font-size: larger;
+}
+.container-fluid{
+    --bs-gutter-x: 20%;
+}
+.fixed-top{
+    top: 3%;
+}
+.offcanvas-title a{
+    text-decoration: none;
+    color: black;
+}
+.ProjectTitle{
+    color: white;
+    text-align: center;
+    padding: 10% 5% 0 5%;
+    font-size: 65px;
+}
+body a{
+    text-decoration: none;
+    color: white;
+}
+.ProjectContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.project-items{
+    text-align: center;
+    width: 50%;
+    color: white;
+}
+.project-items h2{
+    padding: 20px;
+}
+
+.ProjectCarousel{
+    border-left: 4px solid purple;
+    height: 400px;
+}
+
+.ProjectCarousel img{
+    height: 100%;
+    width: 100%;
+}

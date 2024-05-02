@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head> 
+     <!-- Boilerplate -->
+      <meta charset="utf-8"/>
+      <meta name = "viewport" content= "width=device-width, initial-scale=1"/>
+      <title>Shirley's Portfolio</title>
+
+      <!-- BootStrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+       
+      <!-- Font Import -->
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&display=swap');
+      </style>
+
+      <!-- Icon StylesSheet -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+      <!-- CSS Stylesheet -->
+      <link rel="stylesheet" href="PetPals.CSS">
+   </head>
+
+   <body>
+
+    <!-- NavBar Hamburger -->
+    <nav class="navbar bg-body-tertiary fixed-top myNav">
+        <div class="container-fluid myNav">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="material-symbols-outlined hamicon"> menu </span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="../Home Page/Home.HTML">SHIRLEY LANDEROS </a></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../About Page/About.HTML">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PROJECTS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./UXUI.HTML">UX/UI</a></li>
+                    <li><a class="dropdown-item" href="../WebDev Page/WebDev.HTML">WEB DEV</a></li>
+                    <li><a class="dropdown-item" href="../CS Page/Prog.HTML">PROGRAMMING</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Contact Page/Contact.HTML">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Start of Project Page  -->
+    <h1 class="MyTitle"> PetPals </h1>
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span class="badge rounded-pill text-bg-light ">Figma</span>
+      <span class="badge rounded-pill text-bg-light">User Research</span>
+      <span class="badge rounded-pill text-bg-light">User Flow</span>
+      <span class="badge rounded-pill text-bg-light">Prototyping</span>
+      <span class="badge rounded-pill text-bg-light">Iteration</span>
+    </div>
+    
+    <div class="Overview">
+      <h3> Overview: </h3>
+      <p>Create a pet care service for owners to easily track their pets's health, book sitters/daycare, and connect with vets and other pet owners instantly, ensuring convenient and reliable care for their pets</p>
+    </div>
+    <div class="Info1">
+      <img src="./PetPals Imgs/MindMap.png" alt="Mind Map of Pet Pals" width="70%" height="90%" >
+      <div class="desc1">
+        <h3> MindMap: </h3>
+        <p> All the possible aspects and features that would be added to PetPals were brainstromed into a clear map that categorized it into smaller categories.
+          Some possible features included a Health Tracker, a Pet Supply Marketplace, a Personalized Pet Profile, and  other general Pet Services.
+        </p>
+      </div>
+    </div>
+  </hr class='solid'>
+    <div class="Info1">
+      <div class="desc2">
+        <h3> User Task Flow: </h3>
+        <p> All the possible aspects and features that would be added to PetPals were brainstromed into a clear map that categorized it into smaller categories.
+          Some possible features included a Health Tracker, a Pet Supply Marketplace, a Personalized Pet Profile, and  other general Pet Services.
+        </p>
+      </div>
+      <img src="./PetPals Imgs/Digital Task Flow.png" alt="Task Flow Pet Pals" width="70%" height="90%" >
+    </div>
+
+      
+
+   </body>
+</html>

@@ -1,0 +1,88 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+.mr-dafoe-regular {
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+.montserrat-Mont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style:normal;
+}
+  
+html, header{
+    margin: 0%;
+    font-family: Mr Dafoe;
+    background: black
+}
+html, body, nav{
+    margin: 0%;
+    font-family: Montserrat;
+    background: black
+}
+
+/* Desktop First Styling */
+
+/* Header CSS */
+
+.bg-body-tertiary {
+    /* Changed the opacity to zero to make the navbar black */
+    --bs-bg-opacity: 0;
+}
+.hamicon{
+    color: white;
+    font-size: larger;
+}
+.container-fluid{
+    --bs-gutter-x: 20%;
+}
+.fixed-top{
+    top: 3%;
+}
+.offcanvas-title a{
+    text-decoration: none;
+    color: black;
+}
+.MyTitle{
+    color: white;
+    text-align: center;
+    padding: 10% 5% 0 5%;
+    font-size: 65px;
+}
+hr.solid {
+    border-top: 3px solid white;
+  }
+
+.Overview{
+    padding: 0 15%;
+    color: white;
+    width: 100%;
+    font-size: medium;
+}
+.Info1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    padding: 0px 15%;
+    color: white;
+}
+.desc1{
+    width: 30%;
+    padding: 0 0 0 5%;
+}
+.desc2{
+    width: 30%;
+    padding: 0 5% 0 0;
+}

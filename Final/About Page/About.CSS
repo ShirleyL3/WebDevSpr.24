@@ -1,0 +1,146 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+}
+.mr-dafoe-regular {
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+
+.montserrat-Mont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style:normal;
+}
+  
+html, header{
+    margin: 0%;
+    font-family: Mr Dafoe;
+    background: black
+}
+html, body, nav{
+    margin: 0%;
+    font-family: Montserrat;
+    background: black
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop First Styling */
+
+/* Header CSS */
+
+/* .myNav{
+    background-color: black;
+} */
+
+.bg-body-tertiary {
+    /* Changed the o[acity to zero to make the navbar black */
+    --bs-bg-opacity: 0;
+}
+.hamicon{
+    color: white;
+    font-size: larger;
+}
+.container-fluid{
+    --bs-gutter-x: 20%;
+}
+.fixed-top{
+    top: 3%;
+}
+.offcanvas-title a{
+    text-decoration: none;
+    color: black;
+}
+
+.AboutTitle{
+    color: white;
+    text-align: center;
+    padding: 10% 5% 0;
+    font-size: 65px;
+}
+.AboutTitle2{
+    color: white;
+    text-align: center;
+    padding: 10% 5% 0;
+}
+.AboutContainer, .EduSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-evenly;
+    margin-top: 6%;
+}
+.EduSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+.about-item{
+    padding: 30px 0 0 4%;
+}
+.about-img{
+    border-radius: 100%;
+}
+.aboutIntro{
+    padding: 30px 10% 0 4%;
+    text-align: center;
+    color: white;
+}
+.aboutIntro h3{
+    color: #B1DAFF
+}
+
+.EduInfo{
+    text-align: center;
+    color: white
+}
+.EduInfo h4{
+    color: #612B8B;
+}
+
+.ExpSection{
+    color: white;
+}
+
+.Exp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+    padding: 0px 5% 0 5%;
+    /* border-left: 4px solid white;
+    border-top: 4px solid white;
+    height: 100%; */
+}
+.ExpRight{
+    padding: 20px;
+    width: 170px;
+
+}
+.ExpLeft{
+    padding: 20px;
+    width: 100%;
+}
+.Exp img{
+    width: 170px;
+    padding: 20px 20px 20px 40px;
+}
+
+
+
