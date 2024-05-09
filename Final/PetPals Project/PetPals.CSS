@@ -62,8 +62,8 @@ hr.solid {
     border-top: 3px solid white;
   }
 
-.Overview{
-    padding: 0 15%;
+.TextInfo{
+    padding: 1% 15%;
     color: white;
     width: 100%;
     font-size: medium;
@@ -78,11 +78,50 @@ hr.solid {
     padding: 0px 15%;
     color: white;
 }
+
 .desc1{
     width: 30%;
     padding: 0 0 0 5%;
 }
 .desc2{
-    width: 30%;
+    width: 40%;
     padding: 0 5% 0 0;
+}
+
+.Info1 img{
+    border-radius: 15px;
+}
+.full_len{
+    width: 100%;
+    padding: 1% 10%;
+    border-radius: 15px;
+}
+.colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    color: white;
+}
+.colors img{
+    border-radius: 15px;
+    padding: 10px;
+    width: 30%;
+}
+
+.final_pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    color: white;
+}
+.final_pics img{
+    border-radius: 15px;
+    padding: 5px;
+    width:25%;
 }

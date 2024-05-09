@@ -91,6 +91,23 @@ body a{
 }
 
 .ProjectCarousel img{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* width: 800px;
+    height: 550px; */
+}
+
+/* Phone Size */
+@media screen and (max-width:768px){
+    .ProjectTitle{
+        font-size: 40px;
+    }
+    .ProjectContainer{
+        flex-direction: column;
+    }
+    .ProjectCarousel{
+        width: 100%;
+        height: auto;
+    }
 }

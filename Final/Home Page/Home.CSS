@@ -19,10 +19,11 @@
   font-style:normal;
 }
   
-html, header{
+html{
     margin: 0%;
     font-family: Mr Dafoe;
-    background: black
+    background: black;
+    color: white;
 }
 html, body, nav{
     margin: 0%;
@@ -30,18 +31,7 @@ html, body, nav{
     background: black
 }
 
-img{
-    width: 100%;
-    height: auto;
-}
-
 /* Desktop First Styling */
-
-/* Header CSS */
-
-/* .myNav{
-    background-color: black;
-} */
 
 .bg-body-tertiary {
     /* Changed the o[acity to zero to make the navbar black */
@@ -68,11 +58,21 @@ img{
     align-items: center;
     height: 100vh;
 }
-.hero-sec h1{
+header h1{
     font-size: 76px;
     text-transform: uppercase;
     color: white;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 80px;
+
 }
 .hero-sec h1 span{
     display: inline-block;
+}
+.char{
+    transform: translateY(115px);
+    transition: transform 0.5s;
 }

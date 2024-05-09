@@ -77,7 +77,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     justify-content: space-evenly;
     margin-top: 6%;
 }
@@ -90,20 +90,37 @@ img{
     margin-top: 4%;
 }
 .about-item{
-    padding: 30px 0 0 4%;
+    padding: 0 0 0 5%;
 }
 .about-img{
     border-radius: 100%;
 }
+.about-item h3{
+    color: white;
+    font-family: Mr Dafoe;
+    position: absolute;
+    font-size: 70px;
+    transform: rotate(-28deg);
+}
+
 .aboutIntro{
-    padding: 30px 10% 0 4%;
+    padding: 30px 3% 0 4%;
     text-align: center;
     color: white;
 }
 .aboutIntro h3{
     color: #B1DAFF
 }
+.aboutlinks{
+    padding: 0 5% 0 0;
+    width: 500px;
+    height: auto;
+}
+.aboutlinks img{
+    margin-top: 20px;
+}
 
+/* Education Section */
 .EduInfo{
     text-align: center;
     color: white
@@ -112,11 +129,11 @@ img{
     color: #612B8B;
 }
 
+/* Experience Section */
 .ExpSection{
     color: white;
 }
-
-.Exp {
+.Exp{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -124,9 +141,6 @@ img{
     justify-content: space-between;
     margin-top: 1%;
     padding: 0px 5% 0 5%;
-    /* border-left: 4px solid white;
-    border-top: 4px solid white;
-    height: 100%; */
 }
 .ExpRight{
     padding: 20px;
@@ -142,5 +156,33 @@ img{
     padding: 20px 20px 20px 40px;
 }
 
+/* Phone Media Quierie */
+@media screen and (max-width:768px){
+    .AboutContainer{
+        flex-direction: column;
+    }
+    .about-item{
+        width: 60%;
+    }
+    .aboutlinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    }
+    .aboutlinks img{
+        width: 100px;
+        padding: 0 20px;
+    }
+    .Exp{
+        flex-direction: column;
+    }
+    .Exp img{
+        padding: 0;
+    }
+    .ExpRight{
+        display: none;
+    }
 
+}
 
